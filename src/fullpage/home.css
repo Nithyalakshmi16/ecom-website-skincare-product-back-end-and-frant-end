@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #965811;
+    padding: 25px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 150px;
+    
+}
+
+a:hover {
+    color: lightgray;
+}
+.navigation-bar a {
+    text-decoration: none; /* Remove underline from the links */
+    color: #333; /* Set the default text color */
+    padding: 10px 10px; /* Add padding to create spacing around the links */
+    position: relative; /* Required for positioning the selecting line */
+    font-size: 20px;
+    margin-bottom: 150px;
+  }
+  
+  /* Add the selecting line as a pseudo-element */
+  .navigation-bar a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px; /* Set the height of the selecting line */
+    width: 100%; /* Make the line span the entire width of the link */
+    background-color:#BDA284; /* Set the color of the selecting line */
+    transform: scaleX(0); /* Initially, the line has zero width */
+    transition: transform 0.2s ease; /* Add a smooth transition effect */
+  }
+  
+/* Show the selecting line for the active link */
+.navigation-bar a.active::after {
+    transform: scaleX(1); /* Set the width of the line to 100% on active state */
+  }
+  
+  /* Optional: Show the selecting line on hover */
+  .navigation-bar a:hover::after {
+    transform: scaleX(1); /* Set the width of the line to 100% on hover */
+  }
+  .selling {
+    font-family: "Optima";
+    margin-left: -950px;
+  }

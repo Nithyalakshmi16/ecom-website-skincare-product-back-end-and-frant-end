@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fef6f6;
+  margin: 0;
+  padding: 8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+.login-container button{
+  margin-top: 10px;
+
+}
+.login-container input {
+  margin-bottom: 30px;
+}
+.link {
+  margin-top: 25px;
+  color: #090505;
+
+}
+.link a {
+  color: #75561b;
+  text-decoration: none;
+}
+.link a:hover {
+  text-decoration: underline;
+}
